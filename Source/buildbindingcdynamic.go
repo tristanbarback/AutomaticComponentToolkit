@@ -326,7 +326,7 @@ func buildDynamicCppImplementation(component ComponentDefinition, w LanguageWrit
 
 func writeDynamicCPPMethodDeclaration(method ComponentDefinitionMethod, w LanguageWriter, NameSpace string, ClassName string, isGlobal bool) error {
 	parameters := ""
-	returntype := "void"
+	returntype := "inline void"
 
 	for k := 0; k < len(method.Params); k++ {
 
